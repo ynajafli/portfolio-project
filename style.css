@@ -1,0 +1,121 @@
+/* ----- Universal ------  */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+}
+
+a {
+    color: white;
+}
+
+/* ----- Navigation Bar ------  */
+
+header {
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(0,123,191);
+    color: white;
+    position: fixed;
+}
+
+header span {
+    font-family: 'Montserrat';
+    font-size: 26px;
+}
+
+#headerContainer {
+    padding-top: 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header ul {
+    margin-top: 62px;
+    z-index: 100;
+}
+
+header ul li {
+    margin-bottom: 20px;
+    font-family: 'Bitter';
+    font-size: 16px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+img[src*='menu'] {
+    display: none;
+}
+
+
+
+/* ----- Main ------  */
+
+main {
+    margin-left: 250px;
+}
+
+
+
+
+
+
+
+
+/* ----- Media Queries ------  */
+
+@media only screen and (max-width: 1280px) {
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        height: 50px;
+        width: 100%;
+    }
+
+    #headerContainer {
+        padding-top: 0;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    header ul {
+        margin-top: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    header ul li {
+        margin-bottom: 0;
+    }
+
+    main {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header ul {
+        display: none;
+    }
+
+    img[src*='menu'] {
+        display: block;
+        width: 50px;
+        cursor: pointer;
+    }
+}

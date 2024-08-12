@@ -1,0 +1,99 @@
+main {
+    /* border: 2px solid red; */
+    width: 100%;
+    color: white;
+}
+
+#about-me {
+    height: 100vh;
+    background-image: url('./images/tree.jpeg');
+    background-size: cover;
+    background-position: center;
+    /* color: white; */
+    font-family: 'Bitter';
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#about-me-content {
+    margin-top: 100px;
+    max-width: 750px;
+    text-align: center;
+    padding: 5%;
+}
+
+#about-me-content h1 {
+    font-family: 'Lato';
+    margin-bottom: 20px;
+    font-size: 77px;
+}
+
+
+
+
+
+
+#skills {
+    background-color: rgb(54, 57, 77);
+    /* height: 60vh; */
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#skill-cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(35, 87, 167);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 1);
+}
+
+.card img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 4rem;
+    height: 4.5rem;
+}
+
+.card h3 {
+    padding-bottom: 10px;
+    font-family: 'Montserrat';
+}
+
+.card p {
+    padding-bottom: 100px;
+    font-family: 'Lato';
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #about-me-content h1 {
+        font-size: 65px;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    #about-me-content h1 {
+        font-size: 49px;
+    }
+}
